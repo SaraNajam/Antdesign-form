@@ -9,7 +9,9 @@ const Form1 = () => {
     const [InputValue1 , SetInputValue1] = useState('');
     const [InputValue2 , SetInputValue2] = useState('');
     const [InputValue3 , SetInputValue3] = useState('');
-
+    const [tableInputValue ,setTableInputValue]=useState({
+        field1:"",field2:""
+    })
     const handleinputvalue1 = (e) =>
     {
         SetInputValue1(e.target.value);
@@ -25,6 +27,13 @@ const Form1 = () => {
         SetInputValue3(e.target.value);
     }
 
+    const handleChangeInputFields=(fieldName, newValue)=>{
+        setTableInputValue({
+            ...tableInputValue,
+            [fieldName]: newValue
+        });
+    }
+    console.log(tableInputValue)
     //Table content//
 
     const columns = [
@@ -47,8 +56,8 @@ const Form1 = () => {
     ];
     
     const data = [
-        { key: '1', col1: 'HI', col2: <Input className="input-field" />, col3: 'RR' },
-        { key: '2', col1: 'DR', col2: <Input className="input-field" />, col3: 'TY' },
+        { key: '1', col1: 'HI', col2: <Input className="input-field"  onChange={e => handleChangeInputFields('field1', e.target.value)} />, col3: 'RR' },
+        { key: '2', col1: 'DR', col2: <Input className="input-field" onChange={e => handleChangeInputFields('field2', e.target.value)}  />, col3: 'TY' },
     ];
     
    
