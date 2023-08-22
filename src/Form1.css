@@ -62,7 +62,9 @@
     margin: 20px;
     float: right;
 }
-
+.input-field{
+    width: 30%;
+}
 
 @media (max-width: 600px) {
    .main {

@@ -47,8 +47,8 @@ const Form1 = () => {
     ];
     
     const data = [
-        { key: '1', col1: 'HI', col2: '', col3: 'RR' },
-        { key: '2', col1: 'DR', col2: '', col3: 'TY' },
+        { key: '1', col1: 'HI', col2: <Input className="input-field" />, col3: 'RR' },
+        { key: '2', col1: 'DR', col2: <Input className="input-field" />, col3: 'TY' },
     ];
     
    
