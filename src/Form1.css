@@ -1,0 +1,75 @@
+*{
+    font-size: 14px;
+}
+
+.main {
+    margin: 30px 50px;
+    border: 2px solid black;
+}
+
+.h1-content {
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+
+.h2-content {
+    padding: 0px 20px;
+}
+
+.h5 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.col {
+    border-left: 1px solid #000000;
+}
+
+.p1-content {
+    border-bottom: 1px solid #000000;
+    padding: 0px 20px;
+}
+
+.p2-content {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.padding {
+    padding: 10px 20px;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #000000;
+}
+
+.ant-table  {
+    margin: 20px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.submit {
+    background-color: green;
+    color: white;
+    margin: 20px;
+    float: right;
+}
+
+
+@media (max-width: 600px) {
+   .main {
+    margin: 0px 5px;
+    }
+
+    .col{
+        border-top: 1px solid #000000;
+    }
+}
