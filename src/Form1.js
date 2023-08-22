@@ -56,8 +56,8 @@ const Form1 = () => {
     ];
     
     const data = [
-        { key: '1', col1: 'HI', col2: <Input className="input-field"  onChange={e => handleChangeInputFields('field1', e.target.value)} />, col3: 'RR' },
-        { key: '2', col1: 'DR', col2: <Input className="input-field" onChange={e => handleChangeInputFields('field2', e.target.value)}  />, col3: 'TY' },
+        { key: '1', col1: 'HI', col2: <Input className="input-field" value={tableInputValue.field1} onChange={e => handleChangeInputFields('field1', e.target.value)} />, col3: 'RR' },
+        { key: '2', col1: 'DR', col2: <Input className="input-field" value={tableInputValue.field2} onChange={e => handleChangeInputFields('field2', e.target.value)}  />, col3: 'TY' },
     ];
     
    
